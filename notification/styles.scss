@@ -1,0 +1,52 @@
+
+:local(.root) {
+	
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+:local(.modal) {
+	
+	background: #fff;
+    padding: 20px 20px 20px;
+    position: relative;
+    width: 400px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5)
+
+}
+
+:local(.header) {
+	
+	display: flex;
+	margin-bottom: 20px;
+
+	& > * {
+
+		width: 100%;
+
+		&:last-child {
+
+			text-align: right;
+
+		}
+
+	}
+
+}
+
+:local(.close) {
+	
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	stroke: #000;
+
+}
